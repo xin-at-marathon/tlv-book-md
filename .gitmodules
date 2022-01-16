@@ -1,0 +1,3 @@
+[submodule "deps/treeline-struct-repo"]
+	path = deps/treeline-struct-repo
+	url = https://github.com/xin-at-marathon/treeline-struct-repo.git

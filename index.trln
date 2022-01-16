@@ -99,6 +99,10 @@
                 {
                     "fieldname": "Type",
                     "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Theme",
+                    "fieldtype": "OneLineText"
                 }
             ],
             "formatname": "document",
@@ -202,7 +206,7 @@
             "formatname": "section",
             "icon": "text_heading_2",
             "outputlines": [
-                "{*Name*}"
+                "# {*Name*}"
             ],
             "titleline": "{*Name*}"
         },
@@ -237,7 +241,7 @@
             "formatname": "subsection",
             "icon": "text_heading_3",
             "outputlines": [
-                "{*Name*}"
+                "## {*Name*}"
             ],
             "titleline": "{*Name*}"
         },
@@ -252,7 +256,7 @@
             "formatname": "subsubsection",
             "icon": "text_heading_4",
             "outputlines": [
-                "{*Name*}"
+                "### {*Name*}"
             ],
             "titleline": "{*Name*}"
         },

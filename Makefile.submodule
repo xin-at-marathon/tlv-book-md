@@ -4,7 +4,6 @@ DEPS:= treeline-struct-repo:main
 
 .PHONY: all
 all:
-	-git restore .gitmodules
 	@$(foreach dep,$(DEPS), \
 		url=$(word 1, $(subst :, , $(dep))); \
 		tag=$(word 2, $(subst :, , $(dep))); \
