@@ -1,0 +1,27 @@
+CODE_REPO_PREFIX := https://github.com/xin-at-marathon
+
+DEPS:= treeline-struct-repo:main
+
+.PHONY: all
+all:
+	-git restore .gitmodules
+	@$(foreach dep,$(DEPS), \
+		url=$(word 1, $(subst :, , $(dep))); \
+		tag=$(word 2, $(subst :, , $(dep))); \
+		echo "url=$$url, tag=$$tag"; \
+		cd $(PWD); \
+		git submodule add $(CODE_REPO_PREFIX)/$$url.git deps/$$url; \
+		cd deps/$$url && git checkout $$tag; \
+	)
+	git submodule
+
+.PHONY: clean
+clean:
+	@$(foreach dep,$(DEPS), \
+		url=$(word 1, $(subst :, , $(dep))); \
+		echo "remove submodule: $$url"; \
+        git rm -rf --ignore-unmatch -- deps/$$url; \
+		rm -rf deps/$$url; \
+	)
+	-rm -rf .gitmodules .git/modules/*
+	git submodule

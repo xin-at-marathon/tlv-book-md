@@ -1,0 +1,296 @@
+{
+    "formats": [
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText",
+                    "init": "abstract"
+                },
+                {
+                    "fieldname": "Content",
+                    "fieldtype": "Text",
+                    "lines": 3
+                }
+            ],
+            "formatname": "abstract",
+            "icon": "note",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "Text"
+                }
+            ],
+            "formatname": "bib_item",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "Text"
+                }
+            ],
+            "formatname": "bibliography",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "section",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                }
+            ],
+            "formatname": "chapter",
+            "icon": "text_heading_1",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "part",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Author",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Date",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Owner",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Security",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Title",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Subtitle",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Version",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Type",
+                    "fieldtype": "OneLineText"
+                }
+            ],
+            "formatname": "document",
+            "icon": "book_1",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "Text"
+                }
+            ],
+            "formatname": "figure",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Content",
+                    "fieldtype": "Text",
+                    "lines": 3
+                }
+            ],
+            "formatname": "list_item",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Content",
+                    "fieldtype": "Text",
+                    "lines": 3
+                }
+            ],
+            "formatname": "list_item_with_head",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Content",
+                    "fieldtype": "Text",
+                    "lines": 3
+                }
+            ],
+            "formatname": "paragraph",
+            "icon": "text_allcaps",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "chapter",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                }
+            ],
+            "formatname": "part",
+            "icon": "folder3_document",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "subsection",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                }
+            ],
+            "formatname": "section",
+            "icon": "text_heading_2",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "list_item",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Paragraph",
+                    "fieldtype": "Text",
+                    "lines": 3
+                }
+            ],
+            "formatname": "sorted_list",
+            "icon": "text_list_numbers1",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "subsubsection",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                }
+            ],
+            "formatname": "subsection",
+            "icon": "text_heading_3",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "paragraph",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                }
+            ],
+            "formatname": "subsubsection",
+            "icon": "text_heading_4",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        },
+        {
+            "childtype": "list_item",
+            "fields": [
+                {
+                    "fieldname": "Name",
+                    "fieldtype": "OneLineText"
+                },
+                {
+                    "fieldname": "Paragraph",
+                    "fieldtype": "Text",
+                    "lines": 3
+                }
+            ],
+            "formatname": "unsorted_list",
+            "icon": "text_list_bullets",
+            "outputlines": [
+                "{*Name*}"
+            ],
+            "titleline": "{*Name*}"
+        }
+    ],
+    "nodes": [
+        {
+            "children": [],
+            "data": {
+                "Name": "Main"
+            },
+            "format": "document",
+            "uid": "13bf69c06f9611ecadff00163e00f669"
+        }
+    ],
+    "properties": {
+        "tlversion": "3.1.4+",
+        "topnodes": [
+            "13bf69c06f9611ecadff00163e00f669"
+        ]
+    }
+}
